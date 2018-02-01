@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var mvss = require('./')
+
+const args = process.argv.slice(2)
+
+if (args.length < 2) {
+  console.error('Both source & destination folders are required!')
+  process.exit(1)
+}
+
+var source = args[0]
+var destination = args[1]
+
+mvss(source, destination)

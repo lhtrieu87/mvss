@@ -1,0 +1,24 @@
+{
+  "name": "cp_ss",
+  "version": "1.0.0",
+  "description": "Copy jest snapshots from artifacts to src",
+  "main": "cpss.js",
+  "scripts": {
+    "test": "mocha --recursive ./tests/**/*.spec.js"
+  },
+  "bin": "./bin",
+  "keywords": [
+    "jest",
+    "snapshot",
+    "copy"
+  ],
+  "author": "Le Hong Trieu",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^5.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.0",
+    "should": "^13.2.1"
+  }
+}
