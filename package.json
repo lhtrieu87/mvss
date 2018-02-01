@@ -1,8 +1,8 @@
 {
-  "name": "cp_ss",
+  "name": "mvss",
   "version": "1.0.0",
   "description": "Copy jest snapshots from artifacts to src",
-  "main": "cpss.js",
+  "main": "mvss.js",
   "scripts": {
     "test": "mocha --recursive ./tests/**/*.spec.js"
   },
