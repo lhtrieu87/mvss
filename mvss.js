@@ -7,7 +7,7 @@ function cpss(source, destination) {
   for (let i = 0; i < sourceFiles.length; i++) {
     const fileName = sourceFiles[i]
     if (fileName === '__snapshots__') {
-      fs.moveSync(source + '/__snapshots__', destination + '/__snapshots__')
+      fs.moveSync(source + '/__snapshots__', destination + '/__snapshots__', { overwrite: true })
     } else {
       const fsStat = fs.statSync(source + '/' + fileName)
       if (fsStat.isDirectory()) {
